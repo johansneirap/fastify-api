@@ -9,12 +9,13 @@ const fastify = Fastify({
 
 const start = async () => {
   fastify.register(userRoutes, { prefix: "api/user" });
+
   try {
-    await fastify.listen({
-      port: PORT,
-      host: "0.0.0.0",
-    });
-  } catch (error) {}
+    await fastify.listen(PORT, "0.0.0.0");
+  } catch (error) {
+    console.error(error);
+    process.exit(1);
+  }
 };
 
 start();
