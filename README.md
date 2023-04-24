@@ -9,3 +9,7 @@ Build a simple API using the fastest framework for JS/TS.
 - Zod - Request and Response validation
 - Swagger - API docs
 - Typescript - Types & other cool stuff
+
+## What you need
+
+- Make a .env file from .env.example
